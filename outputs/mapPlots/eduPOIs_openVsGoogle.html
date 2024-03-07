@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42eb70b3d2ef637dead995ef6cd73524 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_42eb70b3d2ef637dead995ef6cd73524" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_42eb70b3d2ef637dead995ef6cd73524 = L.map(
+                "map_42eb70b3d2ef637dead995ef6cd73524",
+                {
+                    center: [16.462069169144602, 107.58571521110804],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: false,
+                    preferCanvas: true,
+                }
+            );
+            L.control.scale().addTo(map_42eb70b3d2ef637dead995ef6cd73524);
+
+            
+
+        
+    
+            var tile_layer_16a126f8afb713824c460fd3d667b4cf = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_16a126f8afb713824c460fd3d667b4cf.addTo(map_42eb70b3d2ef637dead995ef6cd73524);
+        
+    
+            var feature_group_4680e930b872303ff0ab179c85c516b2 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_0cdb6e1444bb33c0c42fa1fa38104064 = L.circleMarker(
+                [16.43604914, 107.6056672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_0cdb6e1444bb33c0c42fa1fa38104064.bindTooltip(
+                `<div>
+                     <p>Trường THPT Thuận Hóa</p> <p>An Tây, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c01d761198f5d7ec50a0d20664ea00dc = L.circleMarker(
+                [16.47609383, 107.5895169],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_c01d761198f5d7ec50a0d20664ea00dc.bindTooltip(
+                `<div>
+                     <p>Trường THPT Chi Lăng</p> <p>Phú Cát, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_353ec0349402abc94f2957e87ff67093 = L.circleMarker(
+                [16.44909592, 107.557427],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_353ec0349402abc94f2957e87ff67093.bindTooltip(
+                `<div>
+                     <p>Trường THPT DTNT tỉnh</p> <p>3 Huyền Trân Công Chúa, Phường Đúc, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_11b9e66e4c7f6f440c6de6eec55cf267 = L.circleMarker(
+                [16.46456177, 107.5914508],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_11b9e66e4c7f6f440c6de6eec55cf267.bindTooltip(
+                `<div>
+                     <p>Trường THPT Nguyễn Trường Tộ</p> <p>3 Nguyễn Tri Phương, Phú Hội, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65720498f93209d4955e40903ce1f19c = L.circleMarker(
+                [16.46395992, 107.573694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_65720498f93209d4955e40903ce1f19c.bindTooltip(
+                `<div>
+                     <p>Trường THPT Đặng Trần Côn</p> <p>01 Đặng Trần Côn, Thuận Hoà, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8b448dc9a15fe1c17dac1d8603ce96da = L.circleMarker(
+                [16.48368103, 107.5875804],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_8b448dc9a15fe1c17dac1d8603ce96da.bindTooltip(
+                `<div>
+                     <p>Trường THPT Gia Hội</p> <p>104 Nguyễn Chí Thanh, Phú Hiệp, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d3f739e97125aa9f74fd799cbbb96a23 = L.circleMarker(
+                [16.46148592, 107.592914],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_d3f739e97125aa9f74fd799cbbb96a23.bindTooltip(
+                `<div>
+                     <p>Trường THPT Cao Thắng</p> <p>11 Đống Đa, Phú Nhuận, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1eeae7391d5264aba73be036207eda1a = L.circleMarker(
+                [16.47579592, 107.578901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_1eeae7391d5264aba73be036207eda1a.bindTooltip(
+                `<div>
+                     <p>Trường THPT Nguyễn Huệ</p> <p>83 Đinh Tiên Hoàng, Thuận Thành, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_398ce8c742044cf3f09f7b828677dd46 = L.circleMarker(
+                [16.47173292, 107.572148],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_398ce8c742044cf3f09f7b828677dd46.bindTooltip(
+                `<div>
+                     <p>Trường THPT Bùi Thị Xuân</p> <p>36 Lê Huân, Thuận Hoà, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a47356841a40b755c2b8247ecd80cca = L.circleMarker(
+                [16.46045975, 107.584908],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_5a47356841a40b755c2b8247ecd80cca.bindTooltip(
+                `<div>
+                     <p>Trường THPT Hai Bà Trưng</p> <p>14 Lê Lợi, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3db5db15e457672c6b62eb14f58fdfc8 = L.circleMarker(
+                [16.45953345, 107.5838133],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_3db5db15e457672c6b62eb14f58fdfc8.bindTooltip(
+                `<div>
+                     <p>Trường THPT Quốc Học</p> <p>12 Lê Lợi, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8b48dd71ce9c6d8129d4b93c61784b4a = L.circleMarker(
+                [16.478474, 107.5979208],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_8b48dd71ce9c6d8129d4b93c61784b4a.bindTooltip(
+                `<div>
+                     <p>Khoa Du lịch, ĐH Huế</p> <p>22 - Lâm Hoằng - TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec6fd581ef5fbd031d2fbd53cf58ae2b = L.circleMarker(
+                [16.4674629, 107.5897829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_ec6fd581ef5fbd031d2fbd53cf58ae2b.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Sư phạm Huế</p> <p>34 Lê Lợi - Thành phố Huế, tỉnh Thừa Thiên Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7c3dce2f0989684a9fbb0a18561722a = L.circleMarker(
+                [16.4783387, 107.5717463],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_d7c3dce2f0989684a9fbb0a18561722a.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Ngoại ngữ</p> <p>57 Nguyễn Khoa Chiêm, phường An Cựu, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc50ffac0abd82c6aa465b7e72c35592 = L.circleMarker(
+                [16.4412902, 107.6049742],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_fc50ffac0abd82c6aa465b7e72c35592.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Luật</p> <p>KQH Đại học Huế, Đường Võ Văn Kiệt, phường An Tây, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_568aaed1afe1e7dbea6ad6babf3770ff = L.circleMarker(
+                [16.4441156, 107.5999375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_568aaed1afe1e7dbea6ad6babf3770ff.bindTooltip(
+                `<div>
+                     <p>Khoa Giáo dục thể chất, ĐH Huế</p> <p>52 Hồ Đắc Di, phường An Cựu, thành phố Huế, tỉnh Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b62f5a4adab02552fa31f7ddd99e5776 = L.circleMarker(
+                [16.4588977, 107.579036],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_b62f5a4adab02552fa31f7ddd99e5776.bindTooltip(
+                `<div>
+                     <p>Khoa Quốc tế - ĐH Huế</p> <p>01 Điện Biên Phủ, Vĩnh Ninh, Tp. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_53abcbdd0ffc9f7d9079bbad769ec72b = L.circleMarker(
+                [16.4582393, 107.5775372],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_53abcbdd0ffc9f7d9079bbad769ec72b.bindTooltip(
+                `<div>
+                     <p>khoa kỹ thuật và công nghệ đại học huế</p> <p>01 Điện Biên Phủ, Vĩnh Ninh, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d1ba2d8e167fba2fe3d8277bf3c12a6c = L.circleMarker(
+                [16.4707476, 107.5945089],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_d1ba2d8e167fba2fe3d8277bf3c12a6c.bindTooltip(
+                `<div>
+                     <p>Cao đẳng Du lịch Huế</p> <p>Số 4, Trần Quang Khải, Tp Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0da1145ae07bf61e4aba078d1ce59bea = L.circleMarker(
+                [16.4591267, 107.5905339],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_0da1145ae07bf61e4aba078d1ce59bea.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Khoa học Huế</p> <p>77 Nguyễn Huệ, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_93ab05656e5f9358b5a0bd00a9a23245 = L.circleMarker(
+                [16.4782492, 107.5690745],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_93ab05656e5f9358b5a0bd00a9a23245.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Nông Lâm</p> <p>102 Phùng Hưng, P. Thuận Thành, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f209eb18e01fa24166611600ece087f0 = L.circleMarker(
+                [16.4569089, 107.5854597],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_f209eb18e01fa24166611600ece087f0.bindTooltip(
+                `<div>
+                     <p>Cao đẳng Công nghiệp Huế</p> <p>70 Nguyễn Huệ - Thành phố Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41ea7de3307c1cc07f3f2e0e1f653041 = L.circleMarker(
+                [16.4582653, 107.5757416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_41ea7de3307c1cc07f3f2e0e1f653041.bindTooltip(
+                `<div>
+                     <p>Học viện Âm nhạc Huế</p> <p>01 Lê Lợi, Thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc28a39e516ea5a87f1e4ec85286ea0c = L.circleMarker(
+                [16.4586468, 107.5900878],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_bc28a39e516ea5a87f1e4ec85286ea0c.bindTooltip(
+                `<div>
+                     <p>Khối chuyên, trường Đại học Khoa học Huế</p> <p>77 Nguyễn Huệ, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d84319117f61524fcac6c3fa008fa10a = L.circleMarker(
+                [16.5721804, 107.1616288],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_d84319117f61524fcac6c3fa008fa10a.bindTooltip(
+                `<div>
+                     <p>TTGDTX TP Huế</p> <p>Số 182 Phan Chu Trinh - TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29969e71e5c5a68ed5fdd481b3359c06 = L.circleMarker(
+                [16.4355732, 107.5755517],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_29969e71e5c5a68ed5fdd481b3359c06.bindTooltip(
+                `<div>
+                     <p>Trung cấp Công nghệ Số 10</p> <p>63 Lê Ngô Cát, phường Thủy Xuân, thành phố Huế, tỉnh Thừa Thiên Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ad4dfc8fdd45580ebce237e649088de = L.circleMarker(
+                [16.4484468, 107.5382426],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_3ad4dfc8fdd45580ebce237e649088de.bindTooltip(
+                `<div>
+                     <p>Trường Cao đẳng Nghề Số 23 - BQP</p> <p>số 1 La Sơn Phu Tử, thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a979a8302600ed959121542ab311eb3 = L.circleMarker(
+                [16.467238, 107.5600452],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_1a979a8302600ed959121542ab311eb3.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Phú Xuân</p> <p>176 Trần Phú, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b638213adbafa621b5ce8fe8a0b1d1bb = L.circleMarker(
+                [16.4602031, 107.5956492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_b638213adbafa621b5ce8fe8a0b1d1bb.bindTooltip(
+                `<div>
+                     <p>Trường CĐ Sư phạm Huế</p> <p>123 Nguyễn Huệ - Thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49851721fcc8277ed03fa5ce5ea0ef09 = L.circleMarker(
+                [16.4599407, 107.5716386],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_49851721fcc8277ed03fa5ce5ea0ef09.bindTooltip(
+                `<div>
+                     <p>Trường ĐH Kinh tế Huế</p> <p>100 Phùng Hưng- TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5f5623d69000782eba968601f8fdbd3c = L.circleMarker(
+                [16.4599392, 107.5716385],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_5f5623d69000782eba968601f8fdbd3c.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Y Dược</p> <p>06 Ngô Quyền, Phường Vĩnh Ninh, TP.Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6999e5ea037725b56f63fa2334679778 = L.circleMarker(
+                [16.4783387, 107.5717463],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_6999e5ea037725b56f63fa2334679778.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Nghệ thuật huế</p> <p>10 Tô Ngọc Vân, Thuận Thành, Tp. Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d8ee4d0b340ced213fa9624320febfd3 = L.circleMarker(
+                [16.4440496, 107.5826638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_d8ee4d0b340ced213fa9624320febfd3.bindTooltip(
+                `<div>
+                     <p>Học viện Hành chính Quốc gia tại huế</p> <p>Số 201, đường Phan Bội Châu, TP. Huế, tỉnh Thừa Thiên Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c45d1ed14bc6796feee37b8383ae4b0 = L.circleMarker(
+                [16.4484584, 107.6060961],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_1c45d1ed14bc6796feee37b8383ae4b0.bindTooltip(
+                `<div>
+                     <p>Trường Cao Đẳng Âu Lạc Huế</p> <p>146 An Dương Vương, Tp. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cc70f7412bc9140b384152f88b9da960 = L.circleMarker(
+                [16.4583592, 107.5837926],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_cc70f7412bc9140b384152f88b9da960.bindTooltip(
+                `<div>
+                     <p>Cao đẳng Y tế Huế</p> <p>01 Nguyễn Trường Tộ - Tp Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2515fd2694383fc8ac64d7bc6779a526 = L.circleMarker(
+                [16.4811394, 107.5809877],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_2515fd2694383fc8ac64d7bc6779a526.bindTooltip(
+                `<div>
+                     <p>VIỆN NGHIÊN CỨU KHOA HỌC MIỀN TRUNG</p> <p>321 Huỳnh Thúc Kháng, Thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_385b58ae387e85cff3855454ef0d4475 = L.circleMarker(
+                [16.51144692, 107.602851],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_385b58ae387e85cff3855454ef0d4475.bindTooltip(
+                `<div>
+                     <p>Trường THPT Phan Đăng Lưu</p> <p>Quốc lộ 49B, Phú Dương, Phú Vang (TP Huế), Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c98540cdf08e9e67f825b21eeafeb1f = L.circleMarker(
+                [16.54757292, 107.638512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_5c98540cdf08e9e67f825b21eeafeb1f.bindTooltip(
+                `<div>
+                     <p>Trường THPT Thuận An</p> <p>73 Kinh Dương Vương, Thuận An, Phú Vang (TP Huế), Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fa0b0fce8b9783634f5d53e29c0dc77f = L.circleMarker(
+                [16.4537266, 107.5234779],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_fa0b0fce8b9783634f5d53e29c0dc77f.bindTooltip(
+                `<div>
+                     <p>Học viện Tài chính tại Huế</p> <p>Phạm Văn Đồng, Phú Thượng, Phú Vang (TP Huế), Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f69b55cd671cd1356d24e2535b6bf219 = L.circleMarker(
+                [16.50583292, 107.566667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_4680e930b872303ff0ab179c85c516b2);
+        
+    
+            circle_marker_f69b55cd671cd1356d24e2535b6bf219.bindTooltip(
+                `<div>
+                     <p>Trường THPT Hương Vinh</p> <p>Hương Vinh, Thị xã Hương Trà (TP Huế)</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_4680e930b872303ff0ab179c85c516b2.addTo(map_42eb70b3d2ef637dead995ef6cd73524);
+        
+    
+            var feature_group_638aeaab3930cb7611c6130158526b0d = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_14798ff9bb136d570e28727bbf1c0835 = L.circleMarker(
+                [16.467421462785286, 107.59197563631398],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_14798ff9bb136d570e28727bbf1c0835.bindTooltip(
+                `<div>
+                     <p>Trường THPT Thuận Hóa</p> <p>An Tây, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2117aa8399d1cc80b94ff8b67efb3125 = L.circleMarker(
+                [16.450318259365957, 107.61410483694976],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_2117aa8399d1cc80b94ff8b67efb3125.bindTooltip(
+                `<div>
+                     <p>Trường THPT Chi Lăng</p> <p>Phú Cát, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75e5eab83ec92cf92ede1bad9603598c = L.circleMarker(
+                [16.450119423294254, 107.55748844761526],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_75e5eab83ec92cf92ede1bad9603598c.bindTooltip(
+                `<div>
+                     <p>Trường THPT DTNT tỉnh</p> <p>3 Huyền Trân Công Chúa, Phường Đúc, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c9ad565832a5d2ef35a823a38d554996 = L.circleMarker(
+                [16.464853217332692, 107.59165690496195],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_c9ad565832a5d2ef35a823a38d554996.bindTooltip(
+                `<div>
+                     <p>Trường THPT Nguyễn Trường Tộ</p> <p>3 Nguyễn Tri Phương, Phú Hội, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a548421286e4c1bd33a649ae4d94c7e7 = L.circleMarker(
+                [16.463928425393135, 107.57368663385265],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_a548421286e4c1bd33a649ae4d94c7e7.bindTooltip(
+                `<div>
+                     <p>Trường THPT Đặng Trần Côn</p> <p>01 Đặng Trần Côn, Thuận Hoà, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06ccc560b4ff3e507e0097e36781da2e = L.circleMarker(
+                [16.483934874206064, 107.58685812528192],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_06ccc560b4ff3e507e0097e36781da2e.bindTooltip(
+                `<div>
+                     <p>Trường THPT Gia Hội</p> <p>104 Nguyễn Chí Thanh, Phú Hiệp, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b904691095b33230320975a28ed1fc1 = L.circleMarker(
+                [16.461479456599275, 107.59251498978836],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_2b904691095b33230320975a28ed1fc1.bindTooltip(
+                `<div>
+                     <p>Trường THPT Cao Thắng</p> <p>11 Đống Đa, Phú Nhuận, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5f2854aca9043cdd325e1be708c532bc = L.circleMarker(
+                [16.475794739904384, 107.57890095769206],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_5f2854aca9043cdd325e1be708c532bc.bindTooltip(
+                `<div>
+                     <p>Trường THPT Nguyễn Huệ</p> <p>83 Đinh Tiên Hoàng, Thuận Thành, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cb8a743a7b6dfe7b97c37a91df32a3e = L.circleMarker(
+                [16.472237050344056, 107.57178198714799],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_1cb8a743a7b6dfe7b97c37a91df32a3e.bindTooltip(
+                `<div>
+                     <p>Trường THPT Bùi Thị Xuân</p> <p>36 Lê Huân, Thuận Hoà, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cbb7ee5698b8ac838f59c24c1c6817fc = L.circleMarker(
+                [16.460802840270382, 107.5846261992442],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_cbb7ee5698b8ac838f59c24c1c6817fc.bindTooltip(
+                `<div>
+                     <p>Trường THPT Hai Bà Trưng</p> <p>14 Lê Lợi, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a21c346794320198b8ebc1c36b2c3be4 = L.circleMarker(
+                [16.460042628547253, 107.58335766766359],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_a21c346794320198b8ebc1c36b2c3be4.bindTooltip(
+                `<div>
+                     <p>Trường THPT Quốc Học</p> <p>12 Lê Lợi, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f00215c4dcb50d416adb8bfcd9d54a00 = L.circleMarker(
+                [16.478472231640595, 107.60010984602961],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_f00215c4dcb50d416adb8bfcd9d54a00.bindTooltip(
+                `<div>
+                     <p>Khoa Du lịch, ĐH Huế</p> <p>22 - Lâm Hoằng - TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_183692305852175edde8f615387d8aa1 = L.circleMarker(
+                [16.467436616941157, 107.59199443606111],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_183692305852175edde8f615387d8aa1.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Sư phạm Huế</p> <p>34 Lê Lợi - Thành phố Huế, tỉnh Thừa Thiên Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6bfc0dff3a381e8ae1beea1f5a88339d = L.circleMarker(
+                [16.442685434948576, 107.59920228648201],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_6bfc0dff3a381e8ae1beea1f5a88339d.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Ngoại ngữ</p> <p>57 Nguyễn Khoa Chiêm, phường An Cựu, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ea75a7e56a77931764ca8b3733b1779 = L.circleMarker(
+                [16.437162279446355, 107.60989091136788],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_7ea75a7e56a77931764ca8b3733b1779.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Luật</p> <p>KQH Đại học Huế, Đường Võ Văn Kiệt, phường An Tây, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_654aef493b1c9ba15647408630766193 = L.circleMarker(
+                [16.44409548033699, 107.60214336785067],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_654aef493b1c9ba15647408630766193.bindTooltip(
+                `<div>
+                     <p>Khoa Giáo dục thể chất, ĐH Huế</p> <p>52 Hồ Đắc Di, phường An Cựu, thành phố Huế, tỉnh Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1a4f766537b8df4196823f8b3d315c7 = L.circleMarker(
+                [16.458849063572668, 107.5811895733068],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_f1a4f766537b8df4196823f8b3d315c7.bindTooltip(
+                `<div>
+                     <p>Khoa Quốc tế - ĐH Huế</p> <p>01 Điện Biên Phủ, Vĩnh Ninh, Tp. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0cf748233388eb8fc1ebe493e3ab43ec = L.circleMarker(
+                [16.45866900239428, 107.58107557943524],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_0cf748233388eb8fc1ebe493e3ab43ec.bindTooltip(
+                `<div>
+                     <p>khoa kỹ thuật và công nghệ đại học huế</p> <p>01 Điện Biên Phủ, Vĩnh Ninh, TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a1af3a967c7a3cc2d9268e16a5a9bcf0 = L.circleMarker(
+                [16.46759705886388, 107.59578638719005],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_a1af3a967c7a3cc2d9268e16a5a9bcf0.bindTooltip(
+                `<div>
+                     <p>Cao đẳng Du lịch Huế</p> <p>Số 4, Trần Quang Khải, Tp Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55f4a5f0777da2facc57c561ad3b4ca9 = L.circleMarker(
+                [16.459120518577127, 107.592722449735],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_55f4a5f0777da2facc57c561ad3b4ca9.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Khoa học Huế</p> <p>77 Nguyễn Huệ, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d228a334f293f7fd3f745906994b26b = L.circleMarker(
+                [16.47749496806306, 107.57287181159508],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_9d228a334f293f7fd3f745906994b26b.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Nông Lâm</p> <p>102 Phùng Hưng, P. Thuận Thành, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b93faa30c82cbb5d587bb8b1af0aeed = L.circleMarker(
+                [16.457682608262612, 107.5877386225458],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_3b93faa30c82cbb5d587bb8b1af0aeed.bindTooltip(
+                `<div>
+                     <p>Cao đẳng Công nghiệp Huế</p> <p>70 Nguyễn Huệ - Thành phố Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fad3caa0f067343963ced860e796d5f3 = L.circleMarker(
+                [16.45764956495927, 107.57920030184856],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_fad3caa0f067343963ced860e796d5f3.bindTooltip(
+                `<div>
+                     <p>Học viện Âm nhạc Huế</p> <p>01 Lê Lợi, Thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06a26731136db5f98b3b26ef0c440a6f = L.circleMarker(
+                [16.46078371665867, 107.59271452971043],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_06a26731136db5f98b3b26ef0c440a6f.bindTooltip(
+                `<div>
+                     <p>Khối chuyên, trường Đại học Khoa học Huế</p> <p>77 Nguyễn Huệ, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7632642a70b5299150ad855503089bb6 = L.circleMarker(
+                [16.455856833413755, 107.58919053305497],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_7632642a70b5299150ad855503089bb6.bindTooltip(
+                `<div>
+                     <p>TTGDTX TP Huế</p> <p>Số 182 Phan Chu Trinh - TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6c170183f61d0430d1f1516bc36aca8c = L.circleMarker(
+                [16.435571500236495, 107.57774048979013],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_6c170183f61d0430d1f1516bc36aca8c.bindTooltip(
+                `<div>
+                     <p>Trung cấp Công nghệ Số 10</p> <p>63 Lê Ngô Cát, phường Thủy Xuân, thành phố Huế, tỉnh Thừa Thiên Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e886867aa270220a85cd674b71fd791 = L.circleMarker(
+                [16.474231446120942, 107.5715729816178],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_2e886867aa270220a85cd674b71fd791.bindTooltip(
+                `<div>
+                     <p>Trường Cao đẳng Nghề Số 23 - BQP</p> <p>số 1 La Sơn Phu Tử, thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ad812e902e3e94d897321c9c5c28d6d = L.circleMarker(
+                [16.450498598800223, 107.58556959193129],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_2ad812e902e3e94d897321c9c5c28d6d.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Phú Xuân</p> <p>176 Trần Phú, TP. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_475ea3128281ea66eb8787ea11bb9cc2 = L.circleMarker(
+                [16.459083520477375, 107.59866060687509],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_475ea3128281ea66eb8787ea11bb9cc2.bindTooltip(
+                `<div>
+                     <p>Trường CĐ Sư phạm Huế</p> <p>123 Nguyễn Huệ - Thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4dfc6163139a43658d98390c55289353 = L.circleMarker(
+                [16.476302790405015, 107.57310688550804],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_4dfc6163139a43658d98390c55289353.bindTooltip(
+                `<div>
+                     <p>Trường ĐH Kinh tế Huế</p> <p>100 Phùng Hưng- TP Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a2e0512ee7a343970d5e5f8b025678c = L.circleMarker(
+                [16.45908864108932, 107.58740812675823],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_5a2e0512ee7a343970d5e5f8b025678c.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Y Dược</p> <p>06 Ngô Quyền, Phường Vĩnh Ninh, TP.Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae05b13e38f007fdef7038d5e6a5830e = L.circleMarker(
+                [16.478238778286425, 107.5741878793323],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_ae05b13e38f007fdef7038d5e6a5830e.bindTooltip(
+                `<div>
+                     <p>Trường Đại học Nghệ thuật huế</p> <p>10 Tô Ngọc Vân, Thuận Thành, Tp. Huế, Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d45ba9dc4f1871a84a6a9b3271ab8861 = L.circleMarker(
+                [16.444105161199587, 107.58340334037894],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_d45ba9dc4f1871a84a6a9b3271ab8861.bindTooltip(
+                `<div>
+                     <p>Học viện Hành chính Quốc gia tại huế</p> <p>Số 201, đường Phan Bội Châu, TP. Huế, tỉnh Thừa Thiên Huế.</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_188cbdf39becc5a2117afbb1638a201e = L.circleMarker(
+                [16.449571289251836, 107.6054397622797],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_188cbdf39becc5a2117afbb1638a201e.bindTooltip(
+                `<div>
+                     <p>Trường Cao Đẳng Âu Lạc Huế</p> <p>146 An Dương Vương, Tp. Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_194bb93f243a98d99c2972f10f2d80af = L.circleMarker(
+                [16.458400680168975, 107.58596617836086],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_194bb93f243a98d99c2972f10f2d80af.bindTooltip(
+                `<div>
+                     <p>Cao đẳng Y tế Huế</p> <p>01 Nguyễn Trường Tộ - Tp Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45beb2b3f09b90c4799d3f680f69cb60 = L.circleMarker(
+                [16.4812079565287, 107.58272884616012],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_45beb2b3f09b90c4799d3f680f69cb60.bindTooltip(
+                `<div>
+                     <p>VIỆN NGHIÊN CỨU KHOA HỌC MIỀN TRUNG</p> <p>321 Huỳnh Thúc Kháng, Thành phố Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2112da22136759faf45519268fa7948 = L.circleMarker(
+                [16.511446617268298, 107.60284717780459],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_f2112da22136759faf45519268fa7948.bindTooltip(
+                `<div>
+                     <p>Trường THPT Phan Đăng Lưu</p> <p>Quốc lộ 49B, Phú Dương, Phú Vang (TP Huế), Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_88e267032db2c01641be079cc52915e0 = L.circleMarker(
+                [16.54752564882415, 107.63857038549833],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_88e267032db2c01641be079cc52915e0.bindTooltip(
+                `<div>
+                     <p>Trường THPT Thuận An</p> <p>73 Kinh Dương Vương, Thuận An, Phú Vang (TP Huế), Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce128ad396eca9e78c303055f194e19e = L.circleMarker(
+                [16.496512608455443, 107.60224177127468],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_ce128ad396eca9e78c303055f194e19e.bindTooltip(
+                `<div>
+                     <p>Học viện Tài chính tại Huế</p> <p>Phạm Văn Đồng, Phú Thượng, Phú Vang (TP Huế), Thừa Thiên Huế</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b04feb1a8da3fbd7fe3b346914dd901 = L.circleMarker(
+                [16.492339250712124, 107.57144126149817],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_638aeaab3930cb7611c6130158526b0d);
+        
+    
+            circle_marker_2b04feb1a8da3fbd7fe3b346914dd901.bindTooltip(
+                `<div>
+                     <p>Trường THPT Hương Vinh</p> <p>Hương Vinh, Thị xã Hương Trà (TP Huế)</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_638aeaab3930cb7611c6130158526b0d.addTo(map_42eb70b3d2ef637dead995ef6cd73524);
+        
+    
+            var layer_control_7b4f45c276e5b8fe8ca6252c29057956_layers = {
+                base_layers : {
+                    "Th\u00e0nh ph\u1ed1 Hu\u1ebf" : tile_layer_16a126f8afb713824c460fd3d667b4cf,
+                },
+                overlays :  {
+                    "Gi\u00e1o d\u1ee5c v\u00e0 \u0111\u00e0o t\u1ea1o - Open Data" : feature_group_4680e930b872303ff0ab179c85c516b2,
+                    "Gi\u00e1o d\u1ee5c v\u00e0 \u0111\u00e0o t\u1ea1o - Google Maps" : feature_group_638aeaab3930cb7611c6130158526b0d,
+                },
+            };
+            let layer_control_7b4f45c276e5b8fe8ca6252c29057956 = L.control.layers(
+                layer_control_7b4f45c276e5b8fe8ca6252c29057956_layers.base_layers,
+                layer_control_7b4f45c276e5b8fe8ca6252c29057956_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_42eb70b3d2ef637dead995ef6cd73524);
+
+        
+</script>
+</html>

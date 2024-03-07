@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_544fadb16d1970b8141108b574095e8a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_544fadb16d1970b8141108b574095e8a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_544fadb16d1970b8141108b574095e8a = L.map(
+                "map_544fadb16d1970b8141108b574095e8a",
+                {
+                    center: [16.462069169144602, 107.58571521110804],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: false,
+                    preferCanvas: true,
+                }
+            );
+            L.control.scale().addTo(map_544fadb16d1970b8141108b574095e8a);
+
+            
+
+        
+    
+            var tile_layer_c2d39311447acf688a38e837be6251a2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_c2d39311447acf688a38e837be6251a2.addTo(map_544fadb16d1970b8141108b574095e8a);
+        
+    
+            var feature_group_b83ee1de146217f4693485fca16de0b5 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_4276a9b4d88c4cf10dd46839da24b4a4 = L.circleMarker(
+                [16.46885, 107.5784],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_4276a9b4d88c4cf10dd46839da24b4a4.bindTooltip(
+                `<div>
+                     <p>Điện Thái Hòa và Sân Đại Triều Nghi</p> <p>Đường 23 tháng 8</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0613f68fb766393a243821188056f7e6 = L.circleMarker(
+                [16.46521, 107.57124],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_0613f68fb766393a243821188056f7e6.bindTooltip(
+                `<div>
+                     <p>Đàn Xã Tắc</p> <p>Xã Tắc</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d332c140d8bbe5d52fcdeb503fbad1f8 = L.circleMarker(
+                [16.46975, 107.5778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_d332c140d8bbe5d52fcdeb503fbad1f8.bindTooltip(
+                `<div>
+                     <p>Điện Cần Chánh</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f44c6719aef7ce3b708c3765445b05d1 = L.circleMarker(
+                [16.42211, 107.56302],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_f44c6719aef7ce3b708c3765445b05d1.bindTooltip(
+                `<div>
+                     <p>Điện Hòn Chén</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61d830c156427927b21824b8b84955c9 = L.circleMarker(
+                [16.45282, 107.53894],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_61d830c156427927b21824b8b84955c9.bindTooltip(
+                `<div>
+                     <p>Văn Thánh (Văn Miếu)</p> <p>Văn Thánh</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_baa675242a35872dd52c89d93dd1859f = L.circleMarker(
+                [16.47217, 107.57595],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_baa675242a35872dd52c89d93dd1859f.bindTooltip(
+                `<div>
+                     <p>TỨ PHƯƠNG VÔ SỰ VÀ KHÁT VỌNG HÒA BÌNH</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cf718a2e05f47b5042c5f0cc9bc8d028 = L.circleMarker(
+                [16.47138, 107.58186],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_cf718a2e05f47b5042c5f0cc9bc8d028.bindTooltip(
+                `<div>
+                     <p>Điện Long An</p> <p>Lê Trực</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_42d3320040c5edb97bf76beb2369e96b = L.circleMarker(
+                [16.47805, 107.57672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_42d3320040c5edb97bf76beb2369e96b.bindTooltip(
+                `<div>
+                     <p>Hồ Tịnh Tâm</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_782dc27b487414e5e077adbfb10ad6cd = L.circleMarker(
+                [16.45118, 107.59295],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_782dc27b487414e5e077adbfb10ad6cd.bindTooltip(
+                `<div>
+                     <p>Lăng Dục Đức (An Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae6108c3072fa93389035ae59084d689 = L.circleMarker(
+                [16.3995, 107.59092],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_ae6108c3072fa93389035ae59084d689.bindTooltip(
+                `<div>
+                     <p>Lăng Khải Định (Ứng Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5043cc78a57793ce6ae44cf924b6d3c4 = L.circleMarker(
+                [16.3876555694667, 107.569108691846],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_5043cc78a57793ce6ae44cf924b6d3c4.bindTooltip(
+                `<div>
+                     <p>Lăng Minh Mạng (Hiếu Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_332c333b0a6dc9ddb553e3bed64909c7 = L.circleMarker(
+                [16.4178651974389, 107.572519020705],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_332c333b0a6dc9ddb553e3bed64909c7.bindTooltip(
+                `<div>
+                     <p>Lăng Thiệu Trị (Xương Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0739f1b0e0d8529115e60e20b5de9ff5 = L.circleMarker(
+                [16.433174, 107.565353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_0739f1b0e0d8529115e60e20b5de9ff5.bindTooltip(
+                `<div>
+                     <p>Lăng Tự Đức (Khiêm Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84b8254935908222ed66353adfa49d84 = L.circleMarker(
+                [16.42995, 107.57001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_84b8254935908222ed66353adfa49d84.bindTooltip(
+                `<div>
+                     <p>Lăng Ðồng Khánh (Tư Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0a9172e009ba83d96204c46061f2996 = L.circleMarker(
+                [16.36204, 107.59677],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_e0a9172e009ba83d96204c46061f2996.bindTooltip(
+                `<div>
+                     <p>Lăng Gia Long (Thiên Thọ Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_560e19265f4c741ef499e7e448a59dc0 = L.circleMarker(
+                [16.4654710493563, 107.580897854935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_560e19265f4c741ef499e7e448a59dc0.bindTooltip(
+                `<div>
+                     <p>Phu Văn Lâu</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68116070898b4028f4a48128982a3902 = L.circleMarker(
+                [16.4677814265734, 107.579109037712],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_68116070898b4028f4a48128982a3902.bindTooltip(
+                `<div>
+                     <p>Ngọ Môn</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c5c4312aeb6c5b5bbe241abdb9e307fb = L.circleMarker(
+                [16.47146, 107.58413],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_c5c4312aeb6c5b5bbe241abdb9e307fb.bindTooltip(
+                `<div>
+                     <p>Viện Cơ Mật - Tam Tòa</p> <p>23 Tống Duy Tân</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d9205330cfe3ba61f4bec0e2fd6ef5c7 = L.circleMarker(
+                [16.45339, 107.54496],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_d9205330cfe3ba61f4bec0e2fd6ef5c7.bindTooltip(
+                `<div>
+                     <p>Chùa Thiên Mụ</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e4eae53cfccf2b577d64c20f681a6eb = L.circleMarker(
+                [16.46494, 107.58137],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_0e4eae53cfccf2b577d64c20f681a6eb.bindTooltip(
+                `<div>
+                     <p>Nghênh Lương Đình</p> <p>Lê Duẫn</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5cfe9a9b0fb826ddc6ddca8a04104ef6 = L.circleMarker(
+                [16.44828, 107.55281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_5cfe9a9b0fb826ddc6ddca8a04104ef6.bindTooltip(
+                `<div>
+                     <p>Điện Voi Ré (Miếu Long Châu)</p> <p>Bùi Thị Xuân</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a0fa6aaad74bb9153b549b6bff51b3e = L.circleMarker(
+                [16.44856, 107.55456],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_3a0fa6aaad74bb9153b549b6bff51b3e.bindTooltip(
+                `<div>
+                     <p>Hổ Quyền</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38ce47da2ef046870ebafc9f10d02f2a = L.circleMarker(
+                [16.43786, 107.58267],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_38ce47da2ef046870ebafc9f10d02f2a.bindTooltip(
+                `<div>
+                     <p>Đàn Nam Giao</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3df1fab75adacabc886149259fac3949 = L.circleMarker(
+                [16.46627, 107.58046],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_3df1fab75adacabc886149259fac3949.bindTooltip(
+                `<div>
+                     <p>Kỳ Đài</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5ce5543f57c9dbacca78ee70891685fe = L.circleMarker(
+                [16.45385, 107.56575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b83ee1de146217f4693485fca16de0b5);
+        
+    
+            circle_marker_5ce5543f57c9dbacca78ee70891685fe.bindTooltip(
+                `<div>
+                     <p>Đàn Sơn Xuyên</p> <p>245 Bùi Thị Xuân</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_b83ee1de146217f4693485fca16de0b5.addTo(map_544fadb16d1970b8141108b574095e8a);
+        
+    
+            var feature_group_b55f3d92f8c4712d3e7c8f660dee97e0 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_2aba24029a356ef5a7b4d250ad6e9ed6 = L.circleMarker(
+                [16.468674416745678, 107.57841284811686],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_2aba24029a356ef5a7b4d250ad6e9ed6.bindTooltip(
+                `<div>
+                     <p>Điện Thái Hòa và Sân Đại Triều Nghi</p> <p>Đường 23 tháng 8</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f4cd0e1627399b1589d7bec652f2f0c = L.circleMarker(
+                [16.465010456947144, 107.57122951817894],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_3f4cd0e1627399b1589d7bec652f2f0c.bindTooltip(
+                `<div>
+                     <p>Đàn Xã Tắc</p> <p>Xã Tắc</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4056031f5e2aec3f6de7a7f3ade5af3d = L.circleMarker(
+                [16.469526246461946, 107.57777495136858],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_4056031f5e2aec3f6de7a7f3ade5af3d.bindTooltip(
+                `<div>
+                     <p>Điện Cần Chánh</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e4bf9c4607f0d923e39f26b40a42b78 = L.circleMarker(
+                [16.42192703043939, 107.56296888110256],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_0e4bf9c4607f0d923e39f26b40a42b78.bindTooltip(
+                `<div>
+                     <p>Điện Hòn Chén</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61d9f847eac0ca2a1ae0ab2fa3ae3e05 = L.circleMarker(
+                [16.452671798098326, 107.53897612643765],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_61d9f847eac0ca2a1ae0ab2fa3ae3e05.bindTooltip(
+                `<div>
+                     <p>Văn Thánh (Văn Miếu)</p> <p>Văn Thánh</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_684ecc9f7a32f4c127eb8ede6a18a502 = L.circleMarker(
+                [16.471935708000835, 107.57585017489981],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_684ecc9f7a32f4c127eb8ede6a18a502.bindTooltip(
+                `<div>
+                     <p>TỨ PHƯƠNG VÔ SỰ VÀ KHÁT VỌNG HÒA BÌNH</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_682f34591bda97d7128b005ef4a6120c = L.circleMarker(
+                [16.471186492470384, 107.58200028037855],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_682f34591bda97d7128b005ef4a6120c.bindTooltip(
+                `<div>
+                     <p>Điện Long An</p> <p>Lê Trực</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b0619dcca5c990a09c4ec85019fc3ca4 = L.circleMarker(
+                [16.47797613752832, 107.57670942084826],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_b0619dcca5c990a09c4ec85019fc3ca4.bindTooltip(
+                `<div>
+                     <p>Hồ Tịnh Tâm</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af5831ec77a3c9e4a56244cf62eef05b = L.circleMarker(
+                [16.4513382938312, 107.5931864645684],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_af5831ec77a3c9e4a56244cf62eef05b.bindTooltip(
+                `<div>
+                     <p>Lăng Dục Đức (An Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41fd931f9315ed2d5ce8f0b8b6a327a2 = L.circleMarker(
+                [16.399015354515356, 107.59036229698924],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_41fd931f9315ed2d5ce8f0b8b6a327a2.bindTooltip(
+                `<div>
+                     <p>Lăng Khải Định (Ứng Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b177267739a51d696dcfbfb397eaf3e7 = L.circleMarker(
+                [16.38764110779309, 107.56907554476622],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_b177267739a51d696dcfbfb397eaf3e7.bindTooltip(
+                `<div>
+                     <p>Lăng Minh Mạng (Hiếu Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aa8818f53b013ac57f785c5a122e97c2 = L.circleMarker(
+                [16.417892871749526, 107.57258040625274],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_aa8818f53b013ac57f785c5a122e97c2.bindTooltip(
+                `<div>
+                     <p>Lăng Thiệu Trị (Xương Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_644ae6be1d7e0b317403b4280d1e4650 = L.circleMarker(
+                [16.433003696818947, 107.56643177862958],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_644ae6be1d7e0b317403b4280d1e4650.bindTooltip(
+                `<div>
+                     <p>Lăng Tự Đức (Khiêm Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e8902b4b28bf5a3fbec49cd03efbe21 = L.circleMarker(
+                [16.429930197533945, 107.5699971573556],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_9e8902b4b28bf5a3fbec49cd03efbe21.bindTooltip(
+                `<div>
+                     <p>Lăng Ðồng Khánh (Tư Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f19b16b4f9c957c87aff7ae674c842e = L.circleMarker(
+                [16.361782683106913, 107.5968284270277],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_3f19b16b4f9c957c87aff7ae674c842e.bindTooltip(
+                `<div>
+                     <p>Lăng Gia Long (Thiên Thọ Lăng)</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5c3744851a0ba1c84029f291abf0994 = L.circleMarker(
+                [16.465468722809014, 107.58092789602121],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_b5c3744851a0ba1c84029f291abf0994.bindTooltip(
+                `<div>
+                     <p>Phu Văn Lâu</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1f5c0c0187ae379132bac950d61b1db5 = L.circleMarker(
+                [16.467032088239044, 107.57968805730478],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_1f5c0c0187ae379132bac950d61b1db5.bindTooltip(
+                `<div>
+                     <p>Ngọ Môn</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c11c9997f35b9417c3fff40650bac98 = L.circleMarker(
+                [16.471314048954817, 107.58412832133796],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_3c11c9997f35b9417c3fff40650bac98.bindTooltip(
+                `<div>
+                     <p>Viện Cơ Mật - Tam Tòa</p> <p>23 Tống Duy Tân</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c5c11335edc1abd76a589deb09634188 = L.circleMarker(
+                [16.453096831850054, 107.54490911318084],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_c5c11335edc1abd76a589deb09634188.bindTooltip(
+                `<div>
+                     <p>Chùa Thiên Mụ</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_35c4c56bd701edd4d812e1507c2242a7 = L.circleMarker(
+                [16.46483192216786, 107.5814034765088],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_35c4c56bd701edd4d812e1507c2242a7.bindTooltip(
+                `<div>
+                     <p>Nghênh Lương Đình</p> <p>Lê Duẫn</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e0907b5a52576173a983403c671b209 = L.circleMarker(
+                [16.448229751052573, 107.55280151735377],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_9e0907b5a52576173a983403c671b209.bindTooltip(
+                `<div>
+                     <p>Điện Voi Ré (Miếu Long Châu)</p> <p>Bùi Thị Xuân</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_792f35cefe29313b75140b126b431e91 = L.circleMarker(
+                [16.44849019242968, 107.5545664015393],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_792f35cefe29313b75140b126b431e91.bindTooltip(
+                `<div>
+                     <p>Hổ Quyền</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b40194f5ffe75c29af6aa49d13577069 = L.circleMarker(
+                [16.437757160959073, 107.58269307782999],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_b40194f5ffe75c29af6aa49d13577069.bindTooltip(
+                `<div>
+                     <p>Đàn Nam Giao</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_07dd9d977749a43a7b08d4dcfb633485 = L.circleMarker(
+                [16.46628443537681, 107.58028906315569],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_07dd9d977749a43a7b08d4dcfb633485.bindTooltip(
+                `<div>
+                     <p>Kỳ Đài</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3237a6828828cd89adbb986730cbfbac = L.circleMarker(
+                [16.453716753158243, 107.56576229580827],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b55f3d92f8c4712d3e7c8f660dee97e0);
+        
+    
+            circle_marker_3237a6828828cd89adbb986730cbfbac.bindTooltip(
+                `<div>
+                     <p>Đàn Sơn Xuyên</p> <p>245 Bùi Thị Xuân</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_b55f3d92f8c4712d3e7c8f660dee97e0.addTo(map_544fadb16d1970b8141108b574095e8a);
+        
+    
+            var feature_group_c228bffabf202c15c3179923385c7f4f = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_2fcede3c0aba061a6f8add0044540fab = L.circleMarker(
+                [16.456698142526257, 107.59838431776703],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_2fcede3c0aba061a6f8add0044540fab.bindTooltip(
+                `<div>
+                     <p>Cung An Định</p> <p>97 đường Phan Đình Phùng</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_46b6ad11f67aa883dc1f0d892f6f73d1 = L.circleMarker(
+                [16.468791994043915, 107.57525629858578],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_46b6ad11f67aa883dc1f0d892f6f73d1.bindTooltip(
+                `<div>
+                     <p>Cung Diên Thọ</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1bb5af7929661cd7e3e6b9f8f770b9b = L.circleMarker(
+                [16.469720306919182, 107.57468794198594],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_b1bb5af7929661cd7e3e6b9f8f770b9b.bindTooltip(
+                `<div>
+                     <p>Cung Trường Sinh</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6cf0f81946d240633d1bff96bc3b9d6 = L.circleMarker(
+                [16.466831350208313, 107.5769609455842],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_c6cf0f81946d240633d1bff96bc3b9d6.bindTooltip(
+                `<div>
+                     <p>Cửu Đỉnh</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7245a11ada1216c63f71a7104e48651 = L.circleMarker(
+                [16.46792849812109, 107.58122783333997],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_e7245a11ada1216c63f71a7104e48651.bindTooltip(
+                `<div>
+                     <p>Cửu vị thần công</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fd33b3040d7eaecd89521c687e3bac0 = L.circleMarker(
+                [16.468054527399204, 107.58553925035208],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_6fd33b3040d7eaecd89521c687e3bac0.bindTooltip(
+                `<div>
+                     <p>Đình Thương Bạc</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d41e31f22a5863cc01972115e9f57e7 = L.circleMarker(
+                [16.470283254564798, 107.57851624991932],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_1d41e31f22a5863cc01972115e9f57e7.bindTooltip(
+                `<div>
+                     <p>Duyệt Thị Đường</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d94b83a920dfe33f49c52ceb50555be8 = L.circleMarker(
+                [16.46666317110437, 107.57709594865408],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_d94b83a920dfe33f49c52ceb50555be8.bindTooltip(
+                `<div>
+                     <p>Hiển Lâm Các</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b346383d6f03b81a3701c28eb14e207 = L.circleMarker(
+                [16.48694331239766, 107.62669006972031],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_0b346383d6f03b81a3701c28eb14e207.bindTooltip(
+                `<div>
+                     <p>Đình Dạ Lê</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d29174643eea5bef5fb51cc1d3d2068d = L.circleMarker(
+                [16.48741971205504, 107.57951873248211],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_d29174643eea5bef5fb51cc1d3d2068d.bindTooltip(
+                `<div>
+                     <p>Đình Lại Thế</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ff8a085aea5d7753845804d9cc434dd = L.circleMarker(
+                [16.477605481248165, 107.56560362780793],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_3ff8a085aea5d7753845804d9cc434dd.bindTooltip(
+                `<div>
+                     <p>Đình Phú Xuân</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b84630bb77503df6854d382a9eebd83 = L.circleMarker(
+                [16.557716693672415, 107.6466310029033],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_0b84630bb77503df6854d382a9eebd83.bindTooltip(
+                `<div>
+                     <p>Đình Thai Dương Hạ</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_28cf696b74da36ff7b1c797be0d73635 = L.circleMarker(
+                [16.478648854072368, 107.58718813443592],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_28cf696b74da36ff7b1c797be0d73635.bindTooltip(
+                `<div>
+                     <p>Nhà thờ tổ nghề kim hoàn</p> <p>Số 7, đường Chùa Ông</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a023ac45174e2f48017a7b62a68d40bf = L.circleMarker(
+                [16.484362995303346, 107.58991712613903],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_a023ac45174e2f48017a7b62a68d40bf.bindTooltip(
+                `<div>
+                     <p>Thanh Bình Từ Đường</p> <p>Khu vực 5, phường Phú Hiệp</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b461ce12e2a1d4f233b54a08d95f680e = L.circleMarker(
+                [16.445736567273904, 107.55727145821196],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_b461ce12e2a1d4f233b54a08d95f680e.bindTooltip(
+                `<div>
+                     <p>Thành Lồi</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d873d243213bf8e10fe3697f99f00ea6 = L.circleMarker(
+                [16.451411454690216, 107.5828320923086],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_d873d243213bf8e10fe3697f99f00ea6.bindTooltip(
+                `<div>
+                     <p>Lăng mộ và nhà thờ Phan Bội Châu</p> <p>Số 53, đường Phan Bội Châu</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e98e8b0d54d643e198247b918b5a0b1 = L.circleMarker(
+                [16.436102554851978, 107.57505139698964],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_7e98e8b0d54d643e198247b918b5a0b1.bindTooltip(
+                `<div>
+                     <p>Lăng mộ Thái Phiên - Trần Cao Vân</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e0faa166c01daed67aa467451c568f0 = L.circleMarker(
+                [16.434407140983165, 107.60122428575626],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_8e0faa166c01daed67aa467451c568f0.bindTooltip(
+                `<div>
+                     <p>Lăng mộ Nguyễn Khoa Chiêm - Nguyễn Khoa Đăng</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db49d5dd31b1513397f9fc9e97f6f925 = L.circleMarker(
+                [16.480249651300145, 107.5961311954045],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_db49d5dd31b1513397f9fc9e97f6f925.bindTooltip(
+                `<div>
+                     <p>Phủ thờ Tuy Lý Vương</p> <p>140 Nguyễn Sinh Cung</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_961596fc5d33fccac707f938e17e622a = L.circleMarker(
+                [16.411137420907547, 107.58261240700045],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_961596fc5d33fccac707f938e17e622a.bindTooltip(
+                `<div>
+                     <p>Đồi Thiên An</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_871ba80adc8d84665b7423f5b17694cb = L.circleMarker(
+                [16.427871741567763, 107.56416596700336],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_871ba80adc8d84665b7423f5b17694cb.bindTooltip(
+                `<div>
+                     <p>Đồi Vọng Cảnh</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba0fcb832670ca414483fd08ae4d5952 = L.circleMarker(
+                [16.454127193993177, 107.57956661833722],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_ba0fcb832670ca414483fd08ae4d5952.bindTooltip(
+                `<div>
+                     <p>Chùa Bảo Quốc</p> <p>Điện Biên Phủ</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b435987243b5222fe49151e3e882946 = L.circleMarker(
+                [16.47788352988511, 107.58749530875077],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_0b435987243b5222fe49151e3e882946.bindTooltip(
+                `<div>
+                     <p>Chùa Diệu Đế</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_de0fe35175fc60dfcb986eea9bf6fd31 = L.circleMarker(
+                [16.44289790094771, 107.58761743699117],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_de0fe35175fc60dfcb986eea9bf6fd31.bindTooltip(
+                `<div>
+                     <p>Chùa Quốc Ân</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b15718f910aba3ac8227ed1f680262c1 = L.circleMarker(
+                [16.432498942938448, 107.58398667252212],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_b15718f910aba3ac8227ed1f680262c1.bindTooltip(
+                `<div>
+                     <p>Chùa Tây Thiên</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_abed8d85d11ee26688b856155af067ce = L.circleMarker(
+                [16.420897412658352, 107.59644791030303],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_abed8d85d11ee26688b856155af067ce.bindTooltip(
+                `<div>
+                     <p>Chùa Thuyền Tôn</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5408d4bc267d477cab3afbd7f587cc9 = L.circleMarker(
+                [16.426669858819782, 107.58391126378046],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_b5408d4bc267d477cab3afbd7f587cc9.bindTooltip(
+                `<div>
+                     <p>Chùa Trúc Lâm</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db499ba363ba8ab77c5d78a58657c670 = L.circleMarker(
+                [16.451744414314824, 107.58173546536298],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_db499ba363ba8ab77c5d78a58657c670.bindTooltip(
+                `<div>
+                     <p>Chùa Từ Đàm</p> <p>1 Sư Liễu Quán</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2445c88a8e1c9643439fb4f36c6fcb9e = L.circleMarker(
+                [16.438875654877034, 107.5720256675419],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_2445c88a8e1c9643439fb4f36c6fcb9e.bindTooltip(
+                `<div>
+                     <p>Chùa Từ Hiếu</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9393a3228156eadf1a92911528dc5bb8 = L.circleMarker(
+                [16.446106640140666, 107.57744965046297],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_9393a3228156eadf1a92911528dc5bb8.bindTooltip(
+                `<div>
+                     <p>Chùa Tường Vân</p> <p>Trần Thái Tông</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a02debb68e7359fe3a8125a0555236ac = L.circleMarker(
+                [16.440074203899936, 107.59315463134834],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_a02debb68e7359fe3a8125a0555236ac.bindTooltip(
+                `<div>
+                     <p>Chùa Viên Thông</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b4c21178fee67ab96d3b394fba10dd4 = L.circleMarker(
+                [16.4550075253989, 107.52238447206787],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_4b4c21178fee67ab96d3b394fba10dd4.bindTooltip(
+                `<div>
+                     <p>Nhà thờ An Vân</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3978b81cfcfc0d0bf7bc816507d22b81 = L.circleMarker(
+                [16.45824071721665, 107.59535349007517],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_3978b81cfcfc0d0bf7bc816507d22b81.bindTooltip(
+                `<div>
+                     <p>Nhà thờ Đức Mẹ Hằng Cứu Thế</p> <p>Nguyễn Huệ</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_328503401dc2afe4eb101225e9359b5c = L.circleMarker(
+                [16.49440742716703, 107.59683552056347],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_328503401dc2afe4eb101225e9359b5c.bindTooltip(
+                `<div>
+                     <p>Nhà thờ Nam Phổ</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2c0a1072355cd9e91b705343c80d8a3a = L.circleMarker(
+                [16.453283811163118, 107.58754748670546],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_2c0a1072355cd9e91b705343c80d8a3a.bindTooltip(
+                `<div>
+                     <p>Nhà thờ Phủ Cam</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6972ddf881e5493b85b065dc4b47c4c0 = L.circleMarker(
+                [16.451013354842914, 107.55769245134428],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_6972ddf881e5493b85b065dc4b47c4c0.bindTooltip(
+                `<div>
+                     <p>Nhà thờ Phường Đúc</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86b559194e4b11ebea3f6f4d5683398c = L.circleMarker(
+                [16.455336566258094, 107.55368896704746],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_86b559194e4b11ebea3f6f4d5683398c.bindTooltip(
+                `<div>
+                     <p>Nhà vườn An Hiên</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b3845f9fa9bf5cd7a3bef34023597359 = L.circleMarker(
+                [16.453340152648263, 107.54179565492895],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_b3845f9fa9bf5cd7a3bef34023597359.bindTooltip(
+                `<div>
+                     <p>Nhà vườn Bến Xuân</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d8ae89ce8cf5168309a2cd4d3c1a739 = L.circleMarker(
+                [16.455194092931965, 107.58514147780994],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_3d8ae89ce8cf5168309a2cd4d3c1a739.bindTooltip(
+                `<div>
+                     <p>Nhà vườn Lạc Tịnh</p> <p>65 Phan Đình Phùng</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ead26469b703774f794d2903782c4f25 = L.circleMarker(
+                [16.44423368625616, 107.54068026533746],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_ead26469b703774f794d2903782c4f25.bindTooltip(
+                `<div>
+                     <p>Nhà vườn Lương Quán - Nguyệt Biều</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9182f6a337f7d528c11fb10e87f3eab4 = L.circleMarker(
+                [16.468031964439678, 107.56702332410526],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_9182f6a337f7d528c11fb10e87f3eab4.bindTooltip(
+                `<div>
+                     <p>Nhà vườn Ý Thảo</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e6964917e49074849ab7e87a7278c3b5 = L.circleMarker(
+                [16.48159293538299, 107.5858641163965],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_e6964917e49074849ab7e87a7278c3b5.bindTooltip(
+                `<div>
+                     <p>Phủ thờ Công chúa Ngọc Sơn</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c869f5a811166c3f508f8bd4495cab50 = L.circleMarker(
+                [16.471289977027393, 107.58211837924756],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_c869f5a811166c3f508f8bd4495cab50.bindTooltip(
+                `<div>
+                     <p>Bảo tàng cổ vật cung đình Huế</p> <p>3 Lê Trực</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_231104f2fca83dbc324098c53d562ba7 = L.circleMarker(
+                [16.470713839364386, 107.57292180404394],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_231104f2fca83dbc324098c53d562ba7.bindTooltip(
+                `<div>
+                     <p>Bảo tàng Đại tướng Nguyễn Chí Thanh</p> <p>144 Đặng Thái Thân</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49b59dfb36898fbde02b6bfd2c188f8f = L.circleMarker(
+                [16.476294144290655, 107.58190374811919],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_49b59dfb36898fbde02b6bfd2c188f8f.bindTooltip(
+                `<div>
+                     <p>Bảo tàng đồ sứ ký kiểu thời Nguyễn</p> <p>114 Mai Thúc Loan</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7680fbdb6254efcb14ea5f24210e4898 = L.circleMarker(
+                [16.452679151228203, 107.54865323985238],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_7680fbdb6254efcb14ea5f24210e4898.bindTooltip(
+                `<div>
+                     <p>Bảo tàng gốm cổ sông Hương</p> <p>120 Nguyễn Phúc Nguyên</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64f994c3967822447c41c356d1a89404 = L.circleMarker(
+                [16.45950578865976, 107.58120993177621],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_64f994c3967822447c41c356d1a89404.bindTooltip(
+                `<div>
+                     <p>Bảo tàng Hồ Chí Minh</p> <p>7 Lê Lợi</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fc920a7ce96112f8ac4d57c8d2af3e3 = L.circleMarker(
+                [16.47082549550852, 107.58211733468465],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_6fc920a7ce96112f8ac4d57c8d2af3e3.bindTooltip(
+                `<div>
+                     <p>Bảo tàng lịch sử Thừa Thiên Huế</p> <p>1 đường 23/8</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74b189f1228ef4d7a46ed60a111e84f8 = L.circleMarker(
+                [16.45340517519864, 107.59029757201345],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_74b189f1228ef4d7a46ed60a111e84f8.bindTooltip(
+                `<div>
+                     <p>Bảo tàng Mỹ thuật Cecile Lê Phạm</p> <p>53 Hàm Nghi</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f5d2d56ce01a43eae46e21810b622681 = L.circleMarker(
+                [16.46538510553134, 107.58796455828191],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_f5d2d56ce01a43eae46e21810b622681.bindTooltip(
+                `<div>
+                     <p>Bảo tàng Mỹ thuật Huế</p> <p>Lê Lợi</p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_97b879808365598055f3b747328f563b = L.circleMarker(
+                [16.473873209150454, 107.60384533532383],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.4, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c228bffabf202c15c3179923385c7f4f);
+        
+    
+            circle_marker_97b879808365598055f3b747328f563b.bindTooltip(
+                `<div>
+                     <p>Bảo tàng thiên nhiên duyên hải miền Trung</p> <p></p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_c228bffabf202c15c3179923385c7f4f.addTo(map_544fadb16d1970b8141108b574095e8a);
+        
+    
+            var layer_control_33ca95a42338f6382e5bb116370a06fa_layers = {
+                base_layers : {
+                    "Th\u00e0nh ph\u1ed1 Hu\u1ebf" : tile_layer_c2d39311447acf688a38e837be6251a2,
+                },
+                overlays :  {
+                    "Di s\u1ea3n v\u0103n h\u00f3a v\u1eadt th\u1ec3 - Open Data" : feature_group_b83ee1de146217f4693485fca16de0b5,
+                    "Di s\u1ea3n v\u0103n h\u00f3a v\u1eadt th\u1ec3 - Google Maps" : feature_group_b55f3d92f8c4712d3e7c8f660dee97e0,
+                    "Di s\u1ea3n v\u0103n h\u00f3a v\u1eadt th\u1ec3 - b\u1ed5 sung" : feature_group_c228bffabf202c15c3179923385c7f4f,
+                },
+            };
+            let layer_control_33ca95a42338f6382e5bb116370a06fa = L.control.layers(
+                layer_control_33ca95a42338f6382e5bb116370a06fa_layers.base_layers,
+                layer_control_33ca95a42338f6382e5bb116370a06fa_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_544fadb16d1970b8141108b574095e8a);
+
+        
+</script>
+</html>
